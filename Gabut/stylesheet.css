@@ -1,0 +1,38 @@
+body{
+    background-color: #000000;
+    text-align: center;
+}
+.s{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
+    font-size: 375px;
+    font-family: Arial;
+    color: #aa55ff;
+}
+.s1{
+    z-index: 1;
+    text-shadow: 4px 4px 10px #000000,
+                5px 5px 75px #7722cc,
+                -5px -5px 75px #7722cc;
+}
+.s2{
+    font-size: 380px;
+    color: #000000;
+    z-index: 2;
+}
+@keyframes text-shadow {
+    from {
+        text-shadow: 4px 4px 4px #000000,
+                    0px 0px 0px #000000,
+                    0px 0px 0px #000000;
+    }
+
+    to {
+        text-shadow: 4px 4px 4px #000000,
+                    5px 5px 5px #7722cc,
+                    -5px -5px -5px #7722cc;
+    }
+}
